@@ -1,11 +1,11 @@
-baseurl = "https://compassionate-beaver-d37437.netlify.com/"
+baseurl = "https://jkseolab.netlify.com"
 title = "jkseolab"
 languageCode = "ko-KR"
- 
-paginate = 2
 
-disqusShortname = ""
-googleAnalytics = ""
+paginate = 8
+
+disqusShortname = "jeongkwonseo"
+googleAnalytics = "UA-136123061-1"
 
 [author]
     name = "jkseo"
