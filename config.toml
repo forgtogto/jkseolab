@@ -2,7 +2,7 @@ baseurl = "https://jkseolab.netlify.com"
 title = "jkseolab"
 languageCode = "ko-KR"
 
-paginate = 8
+paginate = 5
 
 disqusShortname = "jeongkwonseo"
 googleAnalytics = "UA-136123061-1"
