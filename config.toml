@@ -1,9 +1,7 @@
 baseurl = "jkseolab"
 title = "jkseolab"
 languageCode = "ko-KR"
-
-theme = "hugo-hello-programmer" 
-
+ 
 paginate = 2
 
 disqusShortname = ""
