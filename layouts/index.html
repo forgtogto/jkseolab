@@ -1,10 +1,15 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
+    <div id="home-center">
+        <h1 id="home-title">{{ .Site.Title }}</h1>
 
-{{ range .Paginator.Pages }}
-  {{ .Render "summary"}}
-  <hr class="summary-sep" />
+        {{- with .Site.Params.homeSubtitle }}
+            <p id="home-subtitle">{{.}}</p>
+        {{- end }}
+
+        {{- with .Site.Params.social }}
+            <div id="home-social">
+                {{ partialCached "social-icons.html" . }}
+            </div>
+        {{- end }}
+    </div>
 {{ end }}
-
-{{ partial "pagination.html" . }}
-
-{{ partial "footer.html" . }}

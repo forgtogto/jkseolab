@@ -1,44 +1,19 @@
-<!DOCTYPE html>
-<html>
+<header class="header">
+    <span class="header__inner">
+        {{ partial "logo.html" . }}
 
-<head>
-  {{ if .Site.GoogleAnalytics }}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <span class="header__right">
+            {{ if len .Site.Menus }}
+                {{ partial "menu.html" . }}
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            {{ end }}
 
-    gtag('config', '{{ .Site.GoogleAnalytics }}');
-  </script>
-  {{ end }}
-
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>{{ .Title }} {{ if ne .Title .Site.Title }} &middot; {{ .Site.Title }}{{ end }}</title>
-  <link rel="icon" href="{{ "/favicon.ico" | relURL }}" type="image/x-icon">
-  <link rel="canonical" href="{{ .Permalink }}">
-  {{ if .RSSLink }}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />
-  {{ end }}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
-  <link rel="stylesheet" href="{{ "/css/styles.css" | relURL }}">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
-
-<body>
-  <div class="navbar">
-    <ul>
-      <li><a href="{{ "/" | relURL }}" class="logo-title">JKSEOLAB</a></li>
-      <li><a href="{{ "/categories" | relURL }}">CATEGORIES</a></li>
-      <li><a href="{{ "/tags" | relURL }}">TAGS</a></li>
-    </ul>
-  </div>
-  <div class="container">
-    <div class="title">
-      <a href="{{ "/" | relURL }}">
-        <img src="{{ "/images/logo.png" | relURL }}" width="400px" height="122px" />
-      </a>
-    </div>
-  </div>
+            <span class="theme-toggle">{{ partial "theme-icon.html" . }}</span>
+        </span>
+    </span>
+</header>

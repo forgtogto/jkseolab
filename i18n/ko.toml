@@ -1,0 +1,36 @@
+# Translations for Korean
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# Generic
+#
+[translations]
+other = "번역"
+
+[postAvailable]
+other = "또한 사용가능 한"
+
+
+# 404.html
+#
+[archives]
+other = "보관함"
+
+[home]
+other = "홈"
+
+[notFound]
+other = "오 이런! 페이지가 없대요."
+
+
+# posts/single.html
+#
+[readingTime]
+one   = "1분"
+other = "{{ .Count }} 분"
+
+[tableOfContents]
+other = "목차"
+
+[wordCount]
+one   = "한 문장"
+other = "{{ .Count }} 문장"
