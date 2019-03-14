@@ -1,4 +1,4 @@
-baseURL = "jkseolab.kro.kr"
+baseURL = "https://jkseolab.netlify.com"
 title   = "JkseoLAB"
 
 DefaultContentLanguage = "ko"
