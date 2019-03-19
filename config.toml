@@ -67,6 +67,8 @@ disableHugoGeneratorInject = false
   customCSS = []
   customJS  = []
 
+  assetDir ( 'assets')
+
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   justifyContent = false  # Set "text-align: justify" to .content.
 
