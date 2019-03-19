@@ -17,6 +17,8 @@ contentDir   = "content"
 dataDir      = "data"
 layoutDir    = "layouts"
 publishDir   = "public"
+assetDir     = "assets"
+
 
 buildDrafts  = false
 buildFuture  = false
@@ -66,8 +68,6 @@ disableHugoGeneratorInject = false
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   customCSS = []
   customJS  = []
-
-  assetDir ( 'assets')
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   justifyContent = false  # Set "text-align: justify" to .content.
