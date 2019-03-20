@@ -13,7 +13,7 @@ series:
 ---
 
 ## Vue.Js
-
+```
 src   
 ├── App.vue
 ├── assets
@@ -48,3 +48,4 @@ src
 |   ├── modules
 |   └── store.js
 └── main.js
+```
