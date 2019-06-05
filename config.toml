@@ -79,25 +79,25 @@ disableHugoGeneratorInject = false
   themeColor = "#252627"
 
   [params.logo]
-    logoText     = "$ create to /home/"
+    logoText     = "$ move to /sweet home/"
     logoHomeLink = "/"
 
   # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
+ # [[params.social]]
+ #   name = "twitter"
+ #   url  = "https://twitter.com/"
 
   [[params.social]]
     name = "email"
-    url  = "mailto:nobody@example.com"
+    url  = "mailto:forgtogto@gmail.com"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/forgtogto"
 
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/"
+ # [[params.social]]
+ #  name = "linkedin"
+ #  url  = "https://www.linkedin.com/"
 
 [languages]
   [languages.ko]
@@ -125,3 +125,7 @@ disableHugoGeneratorInject = false
     identifier = "menu"
     name       = "test"
     url        = "menu/"
+  [[menu.main]]
+    identifier = "dailyLife"
+    name       = "Daily Life"
+    url        = "dailyLife/"    
