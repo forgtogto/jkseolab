@@ -1,11 +1,17 @@
-+++
-title = "Menu"
-date = "2019-03-12"
-aliases = ["menu-us","menu-hugo","contact"]
-[ author ]
-  name = "JK"
-+++
-
+---
+author:
+  name: "Jkose"
+date: 2019-06-05
+linktitle: tag test
+title: tag test
+tag: ["test", "tage"]
+type:
+- post
+- posts
+weight: 10
+series:
+- test teage
+---
 ## We will try.
 ```
 testsets

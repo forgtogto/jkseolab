@@ -120,11 +120,7 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     identifier = "posts"
     name       = "Posts"
-    url        = "posts/"
-  [[menu.main]]
-    identifier = "menu"
-    name       = "test"
-    url        = "menu/"
+    url        = "posts/" 
   [[menu.main]]
     identifier = "dailyLife"
     name       = "Daily Life"
