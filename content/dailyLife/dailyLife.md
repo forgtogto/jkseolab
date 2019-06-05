@@ -4,7 +4,8 @@ author:
 date: 2019-06-05
 linktitle: tag test
 title: tag test
-tag: ["test", "tage"]
+categories: [development, publishing]
+tags: [hugo,content,static site generator]
 type:
 - post
 - posts
