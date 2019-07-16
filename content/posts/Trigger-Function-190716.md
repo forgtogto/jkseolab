@@ -1,26 +1,42 @@
-# Trigger Function 190716
 
++++
+title = "PostgreSQL Trigger Function"
+description = ""
+type = ["posts","post"]
+tags = [
+    "postgreSQL",
+    "trigger",
+    "Function",
+]
+date = "2019-04-02"
+categories = [
+    "PostgreSQL",
+]
+series = ["PostgreSQL"]
+[ author ]
+  name = "jkseo"
++++
+
+# Trigger Function 190716
 - Cmdbuild 내 트리거 펑션을 통하여 값을 자동으로 넣어주게 하는데 목적이 있따.
 ~~~
     -- Function : pubilc.tt_floor_descr()
     -- DROP FUNCTION public.tt_floor_descr();
-    
     CREATE OR REPLACE FUNCTION public.tt_floor_descr()
     	RETURNS trigger AS
     $BODY$
-    DECLARE 
+    DECLARE
     	building VARCHAR;
     	level_code VARCHAR;
     BEGIN
-    
     		SELECT concat_ws( ' ', "Code", "Description" ) INTO building
     		FROM "Building"
     		WHERE "Id" = NEW."Building";
-    
+
     		SELECT "Code" INTO level_code
     		FROM "LookUp"
     		WHERE "Id" = NEW."Level";
-    
+
     		NEW."Description" = concat_ws(' - ', building, level_code );
     		RETURN NEW;
     END;
@@ -41,7 +57,7 @@
 
 ### declare
 
-사용할 변수를 선언하는 곳  여기서는 빌딩과 레벨 코드를 선언함 
+사용할 변수를 선언하는 곳  여기서는 빌딩과 레벨 코드를 선언함
 
 ### $BODY$
 
