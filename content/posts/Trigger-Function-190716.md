@@ -8,7 +8,7 @@ tags = [
     "trigger",
     "Function",
 ]
-date = "2019-04-02"
+date = "2019-07-16"
 categories = [
     "PostgreSQL",
 ]
